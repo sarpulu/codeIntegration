@@ -38,7 +38,7 @@ public class ZigZag {
  static double MovementOfFinchInSeconds;
  static int integerFinchMovementInSeconds;  
 
-  public static void main(String[] args) throws IOException {
+  public void start() throws IOException {
    
    System.out.println("WELCOME TO THE MY FINCH ZIGZAG - PROGRAM"+ "\n" + "Finch Robot Has Connected"+ "\n" + "Finch Speed: "+SpeedperSecondOfFinch + " cm/s");
    ArrayList<String> log = new ArrayList<String>(); // this is creating an array called log.
