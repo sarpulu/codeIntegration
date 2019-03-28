@@ -133,6 +133,7 @@ public class codeIntegration extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				tilt_Control T7 = new tilt_Control();
+				T7.start();
 				dispose();
 			}
 		});
