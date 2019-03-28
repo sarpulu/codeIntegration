@@ -173,5 +173,11 @@ public class codeIntegration extends JFrame {
 		JButton btnQuit = new JButton("Quit");
 		btnQuit.setBounds(170, 243, 117, 29);
 		contentPane.add(btnQuit);
+		btnQuit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+				
+			}
+		});
 	}
 }
