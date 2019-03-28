@@ -169,5 +169,9 @@ public class codeIntegration extends JFrame {
 		JLabel lblDance = new JLabel("Dance");
 		lblDance.setBounds(69, 183, 47, 16);
 		contentPane.add(lblDance);
+		
+		JButton btnQuit = new JButton("Quit");
+		btnQuit.setBounds(170, 243, 117, 29);
+		contentPane.add(btnQuit);
 	}
 }
