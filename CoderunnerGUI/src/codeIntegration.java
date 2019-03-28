@@ -7,6 +7,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.awt.event.ActionEvent;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
@@ -63,6 +64,7 @@ public class codeIntegration extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				SearchforLight T1 = new SearchforLight();
+				T1.start();
 				dispose();
 			}
 		});
@@ -74,6 +76,7 @@ public class codeIntegration extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				Task2ADIL1723816 T2 = new Task2ADIL1723816();
+				T2.start();
 				dispose();
 			}
 		});
@@ -85,6 +88,12 @@ public class codeIntegration extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				navigate T3 = new navigate();
+				try {
+					T3.start();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				dispose();
 			}
 		});
@@ -96,6 +105,12 @@ public class codeIntegration extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				ZigZag T4 = new ZigZag();
+				try {
+					T4.start();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				dispose();
 			}
 		});
@@ -150,4 +165,3 @@ public class codeIntegration extends JFrame {
 		contentPane.add(lblDance);
 	}
 }
-
