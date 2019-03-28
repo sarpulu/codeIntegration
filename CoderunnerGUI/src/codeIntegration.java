@@ -16,7 +16,6 @@ import Task1.*;
 import Task2.*;
 import Task3.*;
 import Task4.*;
-import Task5.*;
 import Task6.*;
 import Task7.*;
 
@@ -46,7 +45,7 @@ public class codeIntegration extends JFrame {
 	public codeIntegration() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 500, 310);
 		contentPane = new JPanel();
 		contentPane.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
 		setContentPane(contentPane);
@@ -120,8 +119,8 @@ public class codeIntegration extends JFrame {
 		contentPane.add(task_6Btn);
 		task_6Btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				
+				welcomeScreen t6 = new welcomeScreen();
+				t6.setVisible(true);								
 			}
 		});
 			
