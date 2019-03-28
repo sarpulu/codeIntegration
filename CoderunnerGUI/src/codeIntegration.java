@@ -133,7 +133,12 @@ public class codeIntegration extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				tilt_Control T7 = new tilt_Control();
-				T7.start();
+				try {
+					T7.start();
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				dispose();
 			}
 		});
